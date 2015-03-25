@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:id="@+id/hiddenview1_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_view"
+            android:text="@string/find_group" />
+
+        <Button
+            android:id="@+id/selectLeader"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:onClick="chooseLeader"
+            android:background="@drawable/mybutton"
+            android:text="@string/selectleader"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/course_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+    <Spinner
+        android:id="@+id/professor_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:id="@+id/go_take_attendance"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/mybutton"
+        android:onClick="chooseattendance"
+        android:text="@string/take_attendance1"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/go_take_a_poll"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/mybutton"
+        android:onClick="choosePoll"
+        android:text="@string/take_a_poll1"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

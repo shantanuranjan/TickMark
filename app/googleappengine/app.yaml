@@ -1,0 +1,48 @@
+application: sunsimengkira
+version: 1
+runtime: php
+api_version: 1
+
+handlers:
+- url: /update_poll
+  script: update_poll.php
+
+- url: /insert_group
+  script: insert_group.php
+
+- url: /get_poll
+  script: get_poll.php
+
+- url: /download
+  script: download.php
+
+- url: /get_all_courses
+  script: get_all_courses.php
+
+- url: /student_present
+  script: student_present.php
+
+- url: /update_course
+  script: update_course.php
+
+- url: /insert_poll
+  script: insert_poll.php
+
+- url: /poll_report
+  script: poll_report.php
+
+- url: /login
+  script: login.php
+
+- url: /signup
+  script: signup.php
+
+- url: /check_user
+  script: check_user.php
+
+- url: /chk_location
+  script: chk_location.php
+
+- url: /save_data_student
+  script: save_data_student.php
+

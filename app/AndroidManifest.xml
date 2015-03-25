@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tickmark"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.INTERNET">
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/checklist"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.tickmark.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.tickmark.HomepageActivity"
+            android:label="@string/title_activity_homepage" >
+        </activity>
+        <activity
+            android:name="com.example.tickmark.AttendeeMarkPageActivity"
+            android:label="@string/title_activity_attendee_mark_page" >
+        </activity>
+        <activity
+            android:name="com.example.tickmark.AttendeePollPageActivity"
+            android:label="@string/title_activity_attendee_poll_page" >
+        </activity>
+        <activity
+            android:name="com.example.tickmark.LeaderHomePageActivity"
+            android:label="@string/title_activity_leader_home_page" >
+        </activity>
+        <activity
+            android:name="com.example.tickmark.LeaderGroupPageActivity"
+            android:label="@string/title_activity_leader_group_page" >
+        </activity>
+        <activity
+            android:name="com.example.tickmark.TakeAttendancePageActivity"
+            android:label="@string/title_activity_take_attendance_page" >
+        </activity>
+        <activity
+            android:name="com.example.tickmark.AttendanceReportPageActivity"
+            android:label="@string/title_activity_attendance_report_page" >
+        </activity>
+        <activity
+            android:name="com.example.tickmark.TakePollPageActivity"
+            android:label="@string/title_activity_take_poll_page" >
+        </activity>
+        <activity
+            android:name="com.example.tickmark.PollReportPageActivity"
+            android:label="@string/title_activity_poll_report_page" >
+        </activity>
+    </application>
+
+</manifest>

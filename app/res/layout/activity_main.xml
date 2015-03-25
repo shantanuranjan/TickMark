@@ -1,0 +1,251 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppBaseTheme"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|fill_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/text_view"
+        android:paddingLeft="100dp"
+        android:text="@string/heading"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|fill_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_view"
+        android:paddingLeft="90dp"
+        android:text="@string/headingpagename"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/signupbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/mybutton"
+        android:onClick="onbuttonclick"
+        android:paddingLeft="25dp"
+        android:text="@string/signupbutton" />
+
+    <LinearLayout
+        android:id="@+id/hiddenview_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/firstnameview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/firstnametextbox"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/text_view"
+                android:text="@string/firstnametextbox"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/firstnameeditbox"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lastnameview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/lastnametextbox"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/text_view"
+                android:text="@string/lastnametextbox"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/lastnameeditbox"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emailidview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/emailidtextbox"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/text_view"
+                android:text="@string/emailidtextbox"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/emailideditbox"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/passwordview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/passwordtextbox"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/text_view"
+                android:text="@string/passwordtextbox"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/passwordeditbox"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/radioview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/radiochoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/isstudentradio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/isstudentradio" />
+
+                <RadioButton
+                    android:id="@+id/isleaderradio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isleaderradio" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/registerbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/mybutton"
+            android:onClick="onbuttonclick"
+            android:paddingLeft="25dp"
+            android:text="@string/registerbutton" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/mybutton"
+        android:onClick="onbuttonclick"
+        android:paddingLeft="25dp"
+        android:text="@string/loginbutton" />
+
+    <LinearLayout
+        android:id="@+id/hiddenview_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/hiddenview2_1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/loginemailtextbox"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/text_view"
+                android:text="@string/loginemailtextbox"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/loginemaileditbox"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hiddenview2_2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/loginpswdtextbox"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/text_view"
+                android:text="@string/loginpswdtextbox"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/loginpswdeditbox"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Enterbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/mybutton"
+            android:onClick="onbuttonclick"
+            android:paddingLeft="25dp"
+            android:text="@string/Enterbutton" />
+    </LinearLayout>
+
+</LinearLayout>

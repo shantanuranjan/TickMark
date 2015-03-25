@@ -1,0 +1,3 @@
+--<ScriptOptions statementTerminator=";"/>
+show tables
+
